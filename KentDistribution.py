@@ -1,15 +1,8 @@
 '''
-This computes the parameters
+This computes the parameters of a Kent distribution.
+As input it takes a vector including the dio p and dip direction
+
 
 '''
 
-from apsg import *
-
-orientation = Pair(131.8, 67.6, 136.63, 77.12)
-w=Group.kent_lin(orientation, 3, 10, 100, name="Kent1")
-print (list(w))
-
-s = StereoNet()
-s.line(w)
-s.show()
 
